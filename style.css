@@ -1,0 +1,130 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Estiliza o corpo da página */
+body {
+    background-image: url("./code.png");
+    background-size: cover;
+    background-position: center;
+
+    font-family: "Fira Code", sans-serif; /* Define a fonte padrao */
+    background-color: #DDDDDD; /* Cor de fundo da página */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; 
+    padding: 0; 
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espacamento entre letras */
+}
+
+/* Estiliza os títulos h2 */
+h2 {
+    font-family: Pacifico, cursive;
+    font-size: 2rem; /* Tamanho da fonte */
+    color: #3d08cf; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.2rem; /* Espacamento entre letras */
+    margin-top: 2rem;
+}
+
+
+/* Estiliza as secoes da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem ; /* Espacamento abaixo de cada secao */
+}
+
+/* Estiliza os inputs dentro das secoes */
+section input {
+    width: 30rem; /* Largura do inputs */
+    border: none; /*remove a borda padrao */
+    padding: 1rem; /* Espacamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espacamento abaixo dos inputs */
+    color: #45474B; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os bototes dentro das secoes */
+section button {
+    padding: 0.8rem 1.2rem; /* Espacamento interno do botao */
+    border: none; /* Remove a borda padrao */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #2a08a2; /* Cor de fundo do botao */
+    color: #F5F7F8; /* Cor do texto do botao */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+width: 60rem; /* Largura máxima da caixa de resultados */
+height: 46vh; /* Altura máxima da caixa de resultados */
+overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+margin-top: 1rem; /* Espacamento acima da caixa de resultados */
+padding: 1rem; /* Espacamento interno */
+border-radius:  0.6rem; /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espacamento interno */
+    margin-bottom:  1rem; /* Espacamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* sombra leve */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size:  1.5rem; /* Tamanho da fonte */
+    color:  #222831; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration:  none; /* Remove o sublinhado padrao dos links */
+    color: #30475E; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando sao passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /*Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descricao meta dentro dos itens de resultados */
+.descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: transparent; /* Cor de fundo do rodapé */
+    color: #00050e; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espacamento interno */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size:  1rem; /* Tamanho da fonte */
+}
+
+.mensagem-nao-encontrada {
+    font-family: fantasy;
+    font-size:  1.3rem; /* Ajusta o tamanho da fonte */
+    color: #840707; /* Cor da fonte */
+    text-align: center;
+}
